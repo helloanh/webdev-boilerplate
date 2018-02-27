@@ -1,0 +1,17 @@
+{
+  "name": "webdev-boilerplate",
+  "version": "1.0.0",
+  "description": "sudo npm install -g webpack@2.4.1 --save-dev",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --watch"
+  },
+  "author": "anh k hoang",
+  "license": "ISC",
+  "devDependencies": {
+    "aframe": "^0.7.1"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
