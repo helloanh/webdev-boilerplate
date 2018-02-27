@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10439,44 +10439,10 @@ return jQuery;
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
-
-function getHello(){
-	return 'Hello there';
-};
-
-let people =[
-	{name: 'John Doe'},
-	{name: 'Spock Something'},
-	{name: 'Bobby Vu'}
-];
-module.exports = people;
-
-
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(3);
-let people = __webpack_require__(1);
-let $ = __webpack_require__(0);
-
-$.each(people, function(key, value){
-	$('body').append('<h1>'+ people[key].name + '</h1>');
-});
-
-
-
-
-
-
-/***/ }),
-/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(4);
+var content = __webpack_require__(3);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -10490,13 +10456,13 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(6)(content, options);
+var update = __webpack_require__(5)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(false) {
-	module.hot.accept("!!./node_modules/css-loader/index.js!./style.css", function() {
-		var newContent = require("!!./node_modules/css-loader/index.js!./style.css");
+	module.hot.accept("!!../../node_modules/css-loader/index.js!./style.css", function() {
+		var newContent = require("!!../../node_modules/css-loader/index.js!./style.css");
 
 		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 
@@ -10522,10 +10488,27 @@ if(false) {
 }
 
 /***/ }),
-/* 4 */
+/* 2 */
+/***/ (function(module, exports) {
+
+function getHello(){
+	return 'Hello there';
+};
+
+let people =[
+	{name: 'John Doe'},
+	{name: 'Spock Something'},
+	{name: 'Bobby Vu'}
+];
+module.exports = people;
+
+
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)(false);
+exports = module.exports = __webpack_require__(4)(false);
 // imports
 
 
@@ -10536,7 +10519,7 @@ exports.push([module.i, "body {\n\tbackground: #d7d7d7;\n}\n\nh1 { color: #003d7
 
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports) {
 
 /*
@@ -10618,7 +10601,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -10684,7 +10667,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(7);
+var	fixUrls = __webpack_require__(6);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -11000,7 +10983,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports) {
 
 
@@ -11092,6 +11075,23 @@ module.exports = function (css) {
 	// send back the fixed css
 	return fixedCss;
 };
+
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(1);
+let people = __webpack_require__(2);
+let $ = __webpack_require__(0);
+
+$.each(people, function(key, value){
+	$('body').append('<h1>'+ people[key].name + '</h1>');
+});
+
+
+
+
 
 
 /***/ })

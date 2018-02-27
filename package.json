@@ -4,7 +4,7 @@
   "description": "sudo npm install -g webpack@2.4.1 --save-dev",
   "main": "index.js",
   "scripts": {
-    "build": "webpack src/js/app.js bundle.js --watch"
+    "build": "webpack --watch"
   },
   "author": "anh k hoang",
   "license": "ISC",
