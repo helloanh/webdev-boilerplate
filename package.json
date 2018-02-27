@@ -10,7 +10,9 @@
   "license": "ISC",
   "devDependencies": {
     "aframe": "^0.7.1",
-    "aframe-layout-component": "^4.3.1"
+    "aframe-layout-component": "^4.3.1",
+    "css-loader": "^0.28.10",
+    "style-loader": "^0.20.2"
   },
   "dependencies": {
     "jquery": "^3.3.1"
