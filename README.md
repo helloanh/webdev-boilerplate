@@ -1,6 +1,28 @@
-#Boilerplate with Webpack as bundler  
+# Boilerplate with Webpack as bundler  
 
-Using webpack2:  
-npm install -g webpack@2.4.1 --save-dev  
+### Set Up  
+
+Create a project directory and download Webpack 3:  
+```bash
+npm install -g webpack@3.11.0--save-dev  
+```
+
+Initialize a node project with:   
+
+```bash
+npm init
+```  
+
+This should give you a package.json.  Since webdev-boilderplate has a package.json already, just run:  
+
+```bash
+npm install to install all dependencies  
+```
+
+### Resources:  
+https://auth0.com/blog/webpack-a-gentle-introduction/  
+
+
+
 
 

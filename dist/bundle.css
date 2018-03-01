@@ -1,0 +1,12 @@
+body {
+  background: #ccc;
+  font-family: Helvetica, Arial, sans-serif; }
+
+h1 {
+  color: #003d71; }
+
+.img-test {
+  border: 2px solid black;
+  background-image: url(56c9a221dea4c62364f31b81fe199591.jpg);
+  width: 1000px;
+  height: 1000px; }
