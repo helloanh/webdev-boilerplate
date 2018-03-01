@@ -9,11 +9,8 @@
     </head>
     <body>
         <script src="dist/bundle.js"></script>
-        <a-scene log="Hello, Scene!">
-         	<a-box log="Hello, box!"></a-box>
-   		 </a-scene>
-         <script>
-            AFrame.registerComponent('log', {
+        <script>
+            AFRAME.registerComponent('log', {
                 schema: { type: 'string' },
                 init: function () {
                     var stringToLog = this.data;
@@ -21,5 +18,9 @@
                 }
             })
          </script>
+        <a-scene log="Hello, Scene!">
+         	<a-box log="Hello, box!"></a-box>
+   		 </a-scene>
+         <
     </body>
 </html>
