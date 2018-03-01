@@ -9,20 +9,17 @@
     </head>
     <body>
         <script src="dist/bundle.js"></script>
-        <a-scene>
-         	<a-entity layout="type: line; margin: 2">
-         	  <a-box></a-box>
-         	  <a-box></a-box>
-         	  <a-box></a-box>
-         	</a-entity>
-
-          	<!-- <a-sky color="#ECECEC"></a-sky> -->
-
-			<a-entity layout="type: line; margin: 2" position="0 5 -5">
-			  <a-box position="0 0 0"></a-box>
-			  <a-box position="2 0 0"></a-box>
-			  <a-box position="4 0 0"></a-box>
-			</a-entity>
+        <a-scene log="Hello, Scene!">
+         	<a-box log="Hello, box!"></a-box>
    		 </a-scene>
+         <script>
+            AFrame.registerComponent('log', {
+                schema: { type: 'string' },
+                init: function () {
+                    var stringToLog = this.data;
+                    console.log(stringToLog);
+                }
+            })
+         </script>
     </body>
 </html>
