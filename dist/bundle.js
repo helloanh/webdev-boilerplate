@@ -65,13 +65,19 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-//JS6 uses let instead of var
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__service_js__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__service_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__service_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_scss_main_scss__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_scss_main_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__css_scss_main_scss__);
+//Add npm libaries or services, 
+// for example jquery from "npm isntall jquery" in package.kson
 let $ = __webpack_require__(1);
 
-// add other npm libararies below
-
+// import other js files or stylesheet from other folders in project 
 
 
 
@@ -10448,6 +10454,18 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+console.log("This is an example of a service called from app.js");
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
