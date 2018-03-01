@@ -1,0 +1,1 @@
+console.log("This is an example of a service called from app.js");
