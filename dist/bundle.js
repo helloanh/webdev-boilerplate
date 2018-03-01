@@ -67,10 +67,10 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(1);
-let $ = __webpack_require__(2);
+//JS6 uses let instead of var
+let $ = __webpack_require__(1);
 
-
+// add other npm libararies below
 
 
 
@@ -80,16 +80,6 @@ let $ = __webpack_require__(2);
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
-
-/*body {
-	background: #d7d7d7;
-}
-
-h1 { color: #003d71; }*/
-
-/***/ }),
-/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
